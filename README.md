@@ -132,19 +132,6 @@ Az `Application` osztályra tegxük rá az `@EnableScheduling` annotációt.
 `@Scheduled(fixedDelay= 6000)` annotációt. Ebben valósítsuk meg a már lejárt hirdetések törlését.
 - Teszteljük a működést egy rövid lejáratú hirdetés felvitelével!
 
-### iMSc feladat (3 pont)
-
-Egészítsd ki a feladatot feliratkozási és értesítési funkcióval!
-
-- Egy meglévő hirdetéshez tetszőleges felhasználó feliratkozhat a `POST /api/ads/{id}/subscribe`
-hívással. A törzsben olyan adatstruktúrát alakíts ki, hogy a felhasználó megadhassa nevét és email-címét!
-A feliratkozásokat az adatbázisban tárold el! (1 pont)
-- Amikor a feladó módosította a hirdetést, akkor az összes feliratkozónak küldj egyszerű szöveges
-email értesítést! Az értesítés a megadott email-címre menjen, és az elején tartalmazzon egy személyes
-megszólítást, valamint említse meg, hogy melyik hirdetés frissült. (1 pont)
-- Fejleszd tovább az értesítés funkciót úgy, hogy a kiküldött értesítés HTML formátumú legyen!
-Ehhez használd a Thymeleaf sablonmotort! (1 pont)
-
 # Licenc
 
 A feladatok szövege és a projektváz felhasználása csak a szerző engedélyével lehetséges.
